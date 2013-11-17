@@ -53,11 +53,11 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="RepresentativeTest.cs" />
+    <Compile Include="UnitTests\RepresentativeTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="AdvocateVoteTest.cs" />
-    <Compile Include="SuckageCalculatorTest.cs" />
-    <Compile Include="UserTest.cs" />
+    <Compile Include="UnitTests\AdvocateVoteTest.cs" />
+    <Compile Include="UnitTests\SuckageCalculatorTest.cs" />
+    <Compile Include="UnitTests\UserTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\RepSuckCore\RepSuckCore.csproj">

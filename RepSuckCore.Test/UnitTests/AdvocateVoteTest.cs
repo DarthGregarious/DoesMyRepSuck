@@ -12,7 +12,7 @@ namespace RepSuckCore.Test
     {
       var motion = Substitute.For<Motion>();
       var advocate = Substitute.For<IAdvocate>();
-      var vote = new AdvocateVote(motion, advocate, false);
+      var vote = new AdvocateVote(motion, advocate, approval: false);
       Assert.IsTrue(vote.Advocate is IAdvocate);
     }
 
@@ -21,7 +21,7 @@ namespace RepSuckCore.Test
     {
       var motion = Substitute.For<Motion>();
       var advocate = Substitute.For<IAdvocate>();
-      var vote = new AdvocateVote(motion, advocate, false);
+      var vote = new AdvocateVote(motion, advocate, approval: false);
       Assert.IsFalse(vote.Approval);
     }
 
@@ -30,7 +30,7 @@ namespace RepSuckCore.Test
     {
       var motion = Substitute.For<Motion>();
       var advocate = Substitute.For<IAdvocate>();
-      var vote = new AdvocateVote(motion, advocate, false);
+      var vote = new AdvocateVote(motion, advocate, approval: false);
       Assert.IsTrue(vote.Motion is Motion);
     }
   }
