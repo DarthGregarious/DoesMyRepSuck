@@ -1,11 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DoesMyRepSuck", "DoesMyRepSuck\DoesMyRepSuck.csproj", "{9988B500-6E2D-4385-995D-410B1132E105}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RepSuckCore", "RepSuckCore\RepSuckCore.csproj", "{F80F42D2-66C8-48E4-90C2-5DBD0270B223}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RepSuckCore.Test", "RepSuckCore.Test\RepSuckCore.Test.csproj", "{F6A06015-D759-4072-A2D1-DBC908577431}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuckData", "SuckData\SuckData.csproj", "{D53A3E01-7068-478C-98D2-96F1CD7C8C3D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,6 +29,10 @@ Global
 		{F6A06015-D759-4072-A2D1-DBC908577431}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F6A06015-D759-4072-A2D1-DBC908577431}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F6A06015-D759-4072-A2D1-DBC908577431}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D53A3E01-7068-478C-98D2-96F1CD7C8C3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D53A3E01-7068-478C-98D2-96F1CD7C8C3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D53A3E01-7068-478C-98D2-96F1CD7C8C3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D53A3E01-7068-478C-98D2-96F1CD7C8C3D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
