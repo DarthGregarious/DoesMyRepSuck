@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DoesMyRepSuck", "DoesMyRepSuck\DoesMyRepSuck.csproj", "{9988B500-6E2D-4385-995D-410B1132E105}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RepSuckCore", "RepSuckCore\RepSuckCore.csproj", "{F80F42D2-66C8-48E4-90C2-5DBD0270B223}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RepSuckCore.Test", "RepSuckCore.Test\RepSuckCore.Test.csproj", "{F6A06015-D759-4072-A2D1-DBC908577431}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9988B500-6E2D-4385-995D-410B1132E105}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9988B500-6E2D-4385-995D-410B1132E105}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9988B500-6E2D-4385-995D-410B1132E105}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9988B500-6E2D-4385-995D-410B1132E105}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F80F42D2-66C8-48E4-90C2-5DBD0270B223}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F80F42D2-66C8-48E4-90C2-5DBD0270B223}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F80F42D2-66C8-48E4-90C2-5DBD0270B223}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F80F42D2-66C8-48E4-90C2-5DBD0270B223}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6A06015-D759-4072-A2D1-DBC908577431}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6A06015-D759-4072-A2D1-DBC908577431}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6A06015-D759-4072-A2D1-DBC908577431}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6A06015-D759-4072-A2D1-DBC908577431}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
