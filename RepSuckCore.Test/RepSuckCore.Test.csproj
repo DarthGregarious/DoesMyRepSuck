@@ -57,6 +57,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UnitTests\AdvocateVoteTest.cs" />
     <Compile Include="UnitTests\SuckageCalculatorTest.cs" />
+    <Compile Include="UnitTests\MotionTests.cs" />
     <Compile Include="UnitTests\UserTest.cs" />
   </ItemGroup>
   <ItemGroup>

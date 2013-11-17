@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RepSuckCore
+namespace RepSuckCore.Calculators
 {
-  public class SuckageCalculator
+  public class SuckageCalculator : ISuckageCalculator
   {
     protected List<AdvocateVote> realVotes;
     protected List<AdvocateVote> idealVotes;

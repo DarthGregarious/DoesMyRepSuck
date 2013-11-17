@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RepSuckCore
+namespace RepSuckCore.Ballots
 {
-  public abstract class Motion
+  public abstract class Ballot
   {
   }
 }

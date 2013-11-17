@@ -39,13 +39,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Bill.cs" />
-    <Compile Include="Motion.cs" />
-    <Compile Include="Advocate.cs" />
+    <Compile Include="Ballots\Ballot.cs" />
+    <Compile Include="Ballots\YesNoBallot.cs" />
+    <Compile Include="Calculators\ISuckageCalculator.cs" />
+    <Compile Include="Calculators\PartyLineCalculator.cs" />
+    <Compile Include="Motions\YesNoMotion.cs" />
+    <Compile Include="Motions\Motion.cs" />
+    <Compile Include="Advocates\IAdvocate.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Representative.cs" />
-    <Compile Include="RepresentativeVote.cs" />
-    <Compile Include="SuckageCalculator.cs" />
+    <Compile Include="Advocates\Representative.cs" />
+    <Compile Include="Advocates\AdvocateVote.cs" />
+    <Compile Include="Calculators\SuckageCalculator.cs" />
     <Compile Include="User.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
