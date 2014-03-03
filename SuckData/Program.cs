@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Autofac;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,9 +9,15 @@ namespace SuckData
 {
   class Program
   {
+    private static IContainer Container { get; set; }
+
     static void Main(string[] args)
     {
-      var govTrack = new GovTrackWrapper();
+      var builder = new ContainerBuilder();
+      builder.RegisterType<GovTrackWrapper>().As<IDownloadBills>();
+      Container = builder.Build();
+
+      IDownloadBills govTrack = Container.Resolve<IDownloadBills>();
       var criteria = new BillCriteria
       {
         NewerThan = DataCacheMeta.LastDownload,
