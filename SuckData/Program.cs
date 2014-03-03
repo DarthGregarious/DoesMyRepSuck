@@ -10,6 +10,14 @@ namespace SuckData
   {
     static void Main(string[] args)
     {
+      var govTrack = new GovTrackWrapper();
+      var criteria = new BillCriteria
+      {
+        NewerThan = DataCacheMeta.LastDownload,
+      };
+      criteria.HavingStatus.Add(BillCriteria.BillStatus.Introduced);
+
+      var bills = govTrack.DownloadBills(criteria);
     }
   }
 }

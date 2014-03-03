@@ -50,6 +50,7 @@
     <Compile Include="Advocates\Representative.cs" />
     <Compile Include="Advocates\AdvocateVote.cs" />
     <Compile Include="Calculators\SuckageCalculator.cs" />
+    <Compile Include="UnitedStates\Congress\Bill.cs" />
     <Compile Include="User.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

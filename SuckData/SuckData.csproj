@@ -34,6 +34,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -41,11 +42,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CurrentTime.cs" />
+    <Compile Include="DataCacheMeta.cs" />
+    <Compile Include="BillCriteria.cs" />
+    <Compile Include="GovTrackBillCriteria.cs" />
+    <Compile Include="GovTrackResponse.cs" />
+    <Compile Include="GovTrackWrapper.cs" />
+    <Compile Include="IDownloadBills.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RepSuckCore\RepSuckCore.csproj">
+      <Project>{f80f42d2-66c8-48e4-90c2-5dbd0270b223}</Project>
+      <Name>RepSuckCore</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

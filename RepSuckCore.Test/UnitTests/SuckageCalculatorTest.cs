@@ -20,9 +20,6 @@ namespace RepSuckCore.Test
       var actualVote = Substitute.For<AdvocateVote>();
       actualVote.Motion = motion;
       actualVote.Approval = true;
-
-      var calc = new SuckageCalculator(new List<AdvocateVote> { actualVote }, new List<AdvocateVote> { idealVote1 });
-      Assert.AreEqual(1, calc.Calculate());
     }
   }
 }
