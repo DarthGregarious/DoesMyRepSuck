@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using RepSuckCore.UnitedStates.Congress;
 
 namespace SuckData
 {
@@ -25,6 +26,13 @@ namespace SuckData
       criteria.HavingStatus.Add(BillCriteria.BillStatus.Introduced);
 
       var bills = govTrack.DownloadBills(criteria);
+
+      using (var db = new CongressContext())
+      {
+        foreach(var bill in bills)
+          db.Bills.Add(bill);
+        db.SaveChanges();
+      }
     }
   }
 }

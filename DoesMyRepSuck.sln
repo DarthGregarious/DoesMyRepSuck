@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.21005.1
+VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DoesMyRepSuck", "DoesMyRepSuck\DoesMyRepSuck.csproj", "{9988B500-6E2D-4385-995D-410B1132E105}"
 EndProject
@@ -10,6 +10,12 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RepSuckCore.Test", "RepSuckCore.Test\RepSuckCore.Test.csproj", "{F6A06015-D759-4072-A2D1-DBC908577431}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuckData", "SuckData\SuckData.csproj", "{D53A3E01-7068-478C-98D2-96F1CD7C8C3D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RepSuck.Web", "RepSuck.Web\RepSuck.Web.csproj", "{5EB1C2AB-D849-42F6-87A6-E58A7BE9A5FD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BallotBox.Tests", "BallotBox.Tests\BallotBox.Tests.csproj", "{1E38B9A0-008E-476E-8AF2-67293DAE537E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BallotBox", "BallotBox\BallotBox.csproj", "{CE16C0B7-63BF-4081-B7B3-919101512C73}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +39,18 @@ Global
 		{D53A3E01-7068-478C-98D2-96F1CD7C8C3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D53A3E01-7068-478C-98D2-96F1CD7C8C3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D53A3E01-7068-478C-98D2-96F1CD7C8C3D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5EB1C2AB-D849-42F6-87A6-E58A7BE9A5FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5EB1C2AB-D849-42F6-87A6-E58A7BE9A5FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5EB1C2AB-D849-42F6-87A6-E58A7BE9A5FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5EB1C2AB-D849-42F6-87A6-E58A7BE9A5FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E38B9A0-008E-476E-8AF2-67293DAE537E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E38B9A0-008E-476E-8AF2-67293DAE537E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E38B9A0-008E-476E-8AF2-67293DAE537E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E38B9A0-008E-476E-8AF2-67293DAE537E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE16C0B7-63BF-4081-B7B3-919101512C73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE16C0B7-63BF-4081-B7B3-919101512C73}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE16C0B7-63BF-4081-B7B3-919101512C73}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE16C0B7-63BF-4081-B7B3-919101512C73}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
