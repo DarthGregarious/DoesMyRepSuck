@@ -7,8 +7,8 @@
     <ProjectGuid>{9988B500-6E2D-4385-995D-410B1132E105}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>DoesMyRepSuck</RootNamespace>
-    <AssemblyName>DoesMyRepSuck</AssemblyName>
+    <RootNamespace>RepSuckCLI</RootNamespace>
+    <AssemblyName>RepSuckCLI</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -41,12 +41,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Application.cs" />
+    <Compile Include="IApplication.cs" />
+    <Compile Include="IApplicationDelegate.cs" />
+    <Compile Include="NewPersonAppDelegate.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RepSuckCore\RepSuckCore.csproj">
+      <Project>{f80f42d2-66c8-48e4-90c2-5dbd0270b223}</Project>
+      <Name>RepSuckCore</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

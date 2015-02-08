@@ -6,13 +6,13 @@ using System.Collections.Generic;
 namespace RepSuckCore.Test
 {
   [TestClass]
-  public class UserTest
+  public class PersonTest
   {
     [TestMethod]
-    public void User_HasTrustedAdvocates()
+    public void User_RemembersName()
     {
-      var user = new User();
-      Assert.IsTrue(user.TrustedAdvocates is IEnumerable<IAdvocate>);
+      var person = new Person("Andrew", "Kvochick");
+      Assert.AreEqual(person.FirstLastName, "Andrew Kvochick");
     }
   }
 }

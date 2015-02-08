@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DoesMyRepSuck", "DoesMyRepSuck\DoesMyRepSuck.csproj", "{9988B500-6E2D-4385-995D-410B1132E105}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RepSuckCLI", "DoesMyRepSuck\RepSuckCLI.csproj", "{9988B500-6E2D-4385-995D-410B1132E105}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RepSuckCore", "RepSuckCore\RepSuckCore.csproj", "{F80F42D2-66C8-48E4-90C2-5DBD0270B223}"
 EndProject
@@ -16,6 +16,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BallotBox.Tests", "BallotBox.Tests\BallotBox.Tests.csproj", "{1E38B9A0-008E-476E-8AF2-67293DAE537E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BallotBox", "BallotBox\BallotBox.csproj", "{CE16C0B7-63BF-4081-B7B3-919101512C73}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RepSuckCLI.Test", "RepSuckCLI.Test\RepSuckCLI.Test.csproj", "{10BBF251-91A0-4D97-8B3C-ACDAA462B447}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{CE16C0B7-63BF-4081-B7B3-919101512C73}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CE16C0B7-63BF-4081-B7B3-919101512C73}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CE16C0B7-63BF-4081-B7B3-919101512C73}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10BBF251-91A0-4D97-8B3C-ACDAA462B447}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10BBF251-91A0-4D97-8B3C-ACDAA462B447}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10BBF251-91A0-4D97-8B3C-ACDAA462B447}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10BBF251-91A0-4D97-8B3C-ACDAA462B447}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

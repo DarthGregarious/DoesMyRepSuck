@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{F80F42D2-66C8-48E4-90C2-5DBD0270B223}</ProjectGuid>
+    <ProjectGuid>{10BBF251-91A0-4D97-8B3C-ACDAA462B447}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>RepSuckCore</RootNamespace>
-    <AssemblyName>RepSuckCore</AssemblyName>
+    <RootNamespace>RepSuckCLI.Test</RootNamespace>
+    <AssemblyName>RepSuckCLI.Test</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -30,14 +30,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="EntityFramework">
-      <HintPath>..\packages\EntityFramework.6.1.0\lib\net45\EntityFramework.dll</HintPath>
-    </Reference>
-    <Reference Include="EntityFramework.SqlServer">
-      <HintPath>..\packages\EntityFramework.6.1.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Moq">
+      <HintPath>..\packages\Moq.4.2.1409.1722\lib\net40\Moq.dll</HintPath>
     </Reference>
     <Reference Include="System" />
-    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -46,35 +43,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Ballots\Ballot.cs" />
-    <Compile Include="Ballots\YesNoBallot.cs" />
-    <Compile Include="Calculators\ISuckageCalculator.cs" />
-    <Compile Include="Calculators\PartyLineCalculator.cs" />
-    <Compile Include="Migrations\201405070210318_InitialCreate.cs" />
-    <Compile Include="Migrations\201405070210318_InitialCreate.Designer.cs">
-      <DependentUpon>201405070210318_InitialCreate.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\Configuration.cs" />
-    <Compile Include="Motions\YesNoMotion.cs" />
-    <Compile Include="Motions\Motion.cs" />
-    <Compile Include="Advocates\IAdvocate.cs" />
+    <Compile Include="ApplicationShould.cs" />
+    <Compile Include="NewPersonAppDelegateShould.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Advocates\Representative.cs" />
-    <Compile Include="Advocates\AdvocateVote.cs" />
-    <Compile Include="Calculators\SuckageCalculator.cs" />
-    <Compile Include="UnitedStates\Congress\Bill.cs" />
-    <Compile Include="Person.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config">
-      <SubType>Designer</SubType>
-    </None>
+    <ProjectReference Include="..\DoesMyRepSuck\RepSuckCLI.csproj">
+      <Project>{9988b500-6e2d-4385-995d-410b1132e105}</Project>
+      <Name>RepSuckCLI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RepSuckCore\RepSuckCore.csproj">
+      <Project>{f80f42d2-66c8-48e4-90c2-5dbd0270b223}</Project>
+      <Name>RepSuckCore</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
+  </ItemGroup>
+  <ItemGroup>
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\201405070210318_InitialCreate.resx">
-      <DependentUpon>201405070210318_InitialCreate.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
