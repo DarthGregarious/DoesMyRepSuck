@@ -36,6 +36,14 @@ namespace RepSuckCLI.Test
     }
 
     [TestMethod]
+    public void HaveVoteRecorderDelegate_WhenCommandIsToRecordVote()
+    {
+      var app = new Application();
+      app.HandleCommand("rv");
+      Assert.AreEqual(typeof(VoteRecorderAppDelegate), app.CurrentDelegate.GetType());
+    }
+
+    [TestMethod]
     public void HaveAnotherPerson_AfterAddPersonIsCalled()
     {
       var app = new Application();
@@ -61,6 +69,15 @@ namespace RepSuckCLI.Test
       var app = new Application();
       app.DelegateComplete();
       Assert.AreEqual(null, app.CurrentDelegate);
+    }
+
+    [TestMethod]
+    public void HaveAnotherIssue_AfterAddIssueIsCalled()
+    {
+      var app = new Application();
+      app.AddIssue(new Issue("test", new[] { "test" }));
+      Assert.AreEqual(app.Issues.Count(), 1);
+      Assert.AreEqual("test", app.Issues.First().Title);
     }
   }
 }

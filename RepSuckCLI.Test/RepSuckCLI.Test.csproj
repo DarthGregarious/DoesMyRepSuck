@@ -44,8 +44,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ApplicationShould.cs" />
+    <Compile Include="NewIssueAppDelegateShould.cs" />
     <Compile Include="NewPersonAppDelegateShould.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="VoteRecorderAppDelegateShould.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DoesMyRepSuck\RepSuckCLI.csproj">

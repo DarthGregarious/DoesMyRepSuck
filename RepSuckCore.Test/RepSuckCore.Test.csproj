@@ -58,7 +58,7 @@
     <Compile Include="UnitTests\AdvocateVoteTest.cs" />
     <Compile Include="UnitTests\SuckageCalculatorTest.cs" />
     <Compile Include="UnitTests\MotionTests.cs" />
-    <Compile Include="UnitTests\PersonTest.cs" />
+    <Compile Include="UnitTests\PersonShould.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\RepSuckCore\RepSuckCore.csproj">

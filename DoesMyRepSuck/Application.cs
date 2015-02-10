@@ -10,18 +10,26 @@ namespace RepSuckCLI
   public class Application : IApplication
   {
     public IApplicationDelegate CurrentDelegate { get; private set; }
-    private List<Person> people;
+    private List<IPerson> people;
+    private List<Issue> issues;
     private bool shouldExit;
 
-    public IEnumerable<Person> People { get { return people; } }
+    public IEnumerable<IPerson> People { get { return people; } }
+    public IEnumerable<Issue> Issues { get { return issues; } }
 
     private Dictionary<string, IApplicationDelegate> registeredDelegates;
 
     public Application()
     {
       registeredDelegates = new Dictionary<string, IApplicationDelegate>();
+
+      RegisterDelegate("np", new NewPersonAppDelegate(this));
+      RegisterDelegate("ni", new NewIssueAppDelegate(this));
+      RegisterDelegate("rv", new VoteRecorderAppDelegate(this));
+
       shouldExit = false;
-      people = new List<Person>();
+      people = new List<IPerson>();
+      issues = new List<Issue>();
     }
 
     public string GetPrompt()
@@ -55,6 +63,11 @@ namespace RepSuckCLI
     public void AddPerson(Person p)
     {
       people.Add(p);
+    }
+
+    public void AddIssue(Issue i)
+    {
+      issues.Add(i);
     }
 
     public void DelegateComplete()

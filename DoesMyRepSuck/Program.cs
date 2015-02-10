@@ -11,11 +11,10 @@ namespace RepSuckCLI
     static void Main(string[] args)
     {
       var app = new Application();
-      app.RegisterDelegate("np", new NewPersonAppDelegate(app));
 
       while(!app.ShouldExit)
       {
-        Console.WriteLine(app.GetPrompt());
+        Console.Write(app.GetPrompt());
         var userCommand = Console.ReadLine();
         app.HandleCommand(userCommand);
       }

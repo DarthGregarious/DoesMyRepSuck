@@ -44,9 +44,11 @@
     <Compile Include="Application.cs" />
     <Compile Include="IApplication.cs" />
     <Compile Include="IApplicationDelegate.cs" />
+    <Compile Include="NewIssueAppDelegate.cs" />
     <Compile Include="NewPersonAppDelegate.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="VoteRecorderAppDelegate.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
